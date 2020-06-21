@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../photos/bot.png" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&display=swap"
+        rel="stylesheet">
 
-    <script src="script.js"></script>
+    <script src="bot_script.js"></script>
     <title>Chat with me | My talky bot</title>
 </head>
 
@@ -20,29 +23,29 @@
         </div>
 
         <div id="conversation-list">
-            
         </div>
 
         <div id="new-message-container">
-            <button data-toggle="tooltip" data-placement="top" title="Logout" class="btn btn-warning" onClick="window.location.reload();"> <b>Restart conversation</b></button>
+            <button data-toggle="tooltip" data-placement="top" title="Logout" class="btn btn-warning"
+                onClick="window.location.reload();"> <b>Restart conversation</b></button>
         </div>
 
         <div id="chat-title">
-            <span></span>
-            
+            <div id="myname"></div>
+
             <a href="login.html"> <i class="fa fa-sign-out" style="color: darkgoldenrod;font-size:20px;"></i></a>
 
         </div>
 
-        <div id="chat-message-list">
+        <div id="chat-message-list" style="overflow-y: scroll;">
             <ul style="overflow-y: scroll;" id="chat">
-               
+
             </ul>
         </div>
 
 
         <div id="chat-form">
-            <img src="../../../photos/attachement.pn" alt="">
+            <img src="" alt="">
             <input id="input" type="text" placeholder="Type a message here">
             <input type="submit" hidden>
         </div>

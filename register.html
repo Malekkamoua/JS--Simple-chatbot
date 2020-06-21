@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Login | My talky bot</title>
+  <title>Registration | My talky bot</title>
   <link rel="icon" type="image/png" href="../../../photos/bot.png" />
   <link rel="stylesheet" href="login-style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&display=swap" rel="stylesheet">
@@ -18,19 +18,13 @@
     <h1>My talky bot</h1>
     <input type="text" name="username" id="username" placeholder="Username" required>
     <input type="password" name="password" id="password" placeholder="Password" required>
-    <input type="submit" id="rgstr_btn" value="Login" onclick="login()">
-    <a href="register.html"> Dont you have an account ?</a>
+    <input type="submit" id="rgstr_btn" value="Register" onclick="registration()">
+    <a href="login.html">already have an account ?</a>
+
 
   </form>
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      console.log("loaded");
-      var storedName = localStorage.removeItem('username');
-      var storedPw = localStorage.removeItem('password');
-    });
-  </script>
 </body>
 
 </html>
